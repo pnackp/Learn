@@ -7,7 +7,7 @@
 // +1 is added to reserve space for null terminator '\0'
 int findindex(char *s){
     int l = 0;
-    while (s[l]) {
+    while (*(s+l)) {
         l++;
     }
     return l + 1; // reserve space for '\0'
