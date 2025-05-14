@@ -10,7 +10,6 @@ typedef struct node
 
 int main() {
     node *head = NULL;
-
     for (int i = 0; i < 3; i++) {
         int x;
         scanf("%d", &x);
@@ -18,12 +17,11 @@ int main() {
         node *temp = malloc(sizeof(node));
         temp->data = x; 
         temp->next = head;
-        temp->prev = NULL;
-
+        temp->prev = NULL;  
         if (head != NULL) {
-            head->prev = temp;
+            head->prev = temp; // if !null replace with temp
         }
-
         head = temp;
     }
+    return 0;
 }
