@@ -7,8 +7,7 @@
 // Array values: 10 20 5 7 30  
 // Maximum: 30  
 // Minimum: 5  
-// Average: 14.40  
-
+// Average: 14.40 
 // Reversed array: 30 7 5 20 10
 
 #include <stdio.h>
