@@ -22,7 +22,7 @@ int main(){
 		}else {
 			temp->next = head; // if head busy temp->next connect to head 2->null , 1->1, changed to 2->1->1
 			tail->next = temp; // now need to changed where tail point to . 2->1->2;
-			tail = temp;//
+			head = temp;//
 		}	
 	}
 	node* current = head;
