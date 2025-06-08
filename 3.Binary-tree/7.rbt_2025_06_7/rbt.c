@@ -136,7 +136,7 @@ void find(node* root, int data) {
 void print(node* root) {
     if (root != NULL) {
         print(root->left);
-        printf("%d(%s) ", root->data , root->color == black ? 'B' : 'R');
+        printf("%d(%c) ", root->data , root->color == black ? 'B' : 'R');
         print(root->right);
     }
     return;
