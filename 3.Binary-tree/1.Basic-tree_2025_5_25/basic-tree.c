@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+:w
+
 typedef struct node{
   int data;
   struct node * left;
