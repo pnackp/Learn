@@ -167,12 +167,12 @@ void deletefixup(node **root , node*x){
   while(x != *root && (x== NULL || x->color == black)){
     if (x == x->parent->left) {
       s = x->parent->right;
-      if(s->color == red){
+      if(s->color == red){ // first codition
         s->color = black;
         x->parent->color = red;
         *root = rotateleft(*root , x->parent);
       }
-      if((s->left == NULL || s->left->color == black) && (s->right == NULL || s->right->color == black))
+      if((s->left == NULL || s->left->color == black) && (s->right == NULL || s->right->color == black)) // second condi
       {
         s->color = red;
         x = x->parent;
